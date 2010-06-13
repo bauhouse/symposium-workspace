@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section guid="4c14d8a1c57cf">
+  <name handle="presentation">Presentation</name>
+  <hidden-from-publish-menu>no</hidden-from-publish-menu>
+  <navigation-group>Presentation</navigation-group>
+  <publish-order-handle></publish-order-handle>
+  <publish-order-direction></publish-order-direction>
+  <fields>
+    <field guid="4c14d8a1c7f2a">
+      <required>yes</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>topic</element-name>
+      <name>Topic</name>
+      <publish-label></publish-label>
+      <text-size>single</text-size>
+      <text-formatter></text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>presentation</section>
+    </field>
+    <field guid="4c14d9059a23d">
+      <required>yes</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>summary</element-name>
+      <name>Summary</name>
+      <publish-label></publish-label>
+      <text-size>medium</text-size>
+      <text-formatter>markdown</text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>presentation</section>
+    </field>
+    <field guid="4c14d9acf303b">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <type>upload</type>
+      <element-name>file</element-name>
+      <name>File</name>
+      <publish-label></publish-label>
+      <destination>/workspace</destination>
+      <validator>/\.(?:pdf)$/i</validator>
+      <section>presentation</section>
+    </field>
+    <field guid="4c14d9e2a04b6">
+      <required>yes</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>order</element-name>
+      <name>Order</name>
+      <publish-label></publish-label>
+      <text-size>single</text-size>
+      <text-formatter></text-formatter>
+      <text-validator>/^-?(?:\d+(?:\.\d+)?|\.\d+)$/i</text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>presentation</section>
+    </field>
+    <field guid="4c14da0659b7a">
+      <required>yes</required>
+      <show-column>yes</show-column>
+      <limit>20</limit>
+      <type>link</type>
+      <element-name>attendee</element-name>
+      <name>Attendee</name>
+      <publish-label></publish-label>
+      <section>presentation</section>
+      <related-fields>
+        <item section="attendees" field="name"/>
+      </related-fields>
+    </field>
+  </fields>
+  <layout>
+    <column>
+      <size>large</size>
+      <fieldset>
+        <name></name>
+        <field>topic</field>
+        <field>summary</field>
+      </fieldset>
+    </column>
+    <column>
+      <size>small</size>
+      <fieldset>
+        <name></name>
+        <field>file</field>
+        <field>order</field>
+        <field>attendee</field>
+      </fieldset>
+    </column>
+  </layout>
+</section>

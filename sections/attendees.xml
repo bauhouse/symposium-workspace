@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section guid="4c14d80319abe">
+  <name handle="attendees">Attendees</name>
+  <hidden-from-publish-menu>no</hidden-from-publish-menu>
+  <navigation-group>Attendees</navigation-group>
+  <publish-order-handle></publish-order-handle>
+  <publish-order-direction></publish-order-direction>
+  <fields>
+    <field guid="4c14d8031c1a3">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>symphony-username</element-name>
+      <name>Symphony Username</name>
+      <publish-label></publish-label>
+      <text-size>single</text-size>
+      <text-formatter>markdown</text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>attendees</section>
+    </field>
+    <field guid="4c14d8031e947">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>location</element-name>
+      <name>Location</name>
+      <publish-label></publish-label>
+      <text-size>single</text-size>
+      <text-formatter></text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>attendees</section>
+    </field>
+    <field guid="4c14d80320fdc">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>location-name</element-name>
+      <name>Location Name</name>
+      <publish-label></publish-label>
+      <text-size>single</text-size>
+      <text-formatter></text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>attendees</section>
+    </field>
+    <field guid="4c14d803236fe">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>name</element-name>
+      <name>Name</name>
+      <publish-label></publish-label>
+      <text-size>single</text-size>
+      <text-formatter></text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>attendees</section>
+    </field>
+    <field guid="4c14d83219f15">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>statement</element-name>
+      <name>Statement</name>
+      <publish-label></publish-label>
+      <text-size>medium</text-size>
+      <text-formatter>markdown</text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>attendees</section>
+    </field>
+  </fields>
+  <layout>
+    <column>
+      <size>large</size>
+      <fieldset>
+        <name></name>
+        <field>name</field>
+        <field>statement</field>
+      </fieldset>
+    </column>
+    <column>
+      <size>small</size>
+      <fieldset>
+        <name></name>
+        <field>symphony-username</field>
+        <field>location-name</field>
+        <field>location</field>
+      </fieldset>
+    </column>
+  </layout>
+</section>

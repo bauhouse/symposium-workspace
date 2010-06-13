@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view guid="4c14d9b32d46f">
+  <title>Home</title>
+  <content-type>text/html;charset=utf-8</content-type>
+  <types>
+    <item>index</item>
+  </types>
+</view>

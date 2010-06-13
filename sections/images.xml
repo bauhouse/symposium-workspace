@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section guid="4c14da67b9800">
+  <name handle="images">Images</name>
+  <hidden-from-publish-menu>no</hidden-from-publish-menu>
+  <navigation-group>Presentation</navigation-group>
+  <publish-order-handle></publish-order-handle>
+  <publish-order-direction></publish-order-direction>
+  <fields>
+    <field guid="4c14da67bbec0">
+      <required>yes</required>
+      <show-column>yes</show-column>
+      <limit>20</limit>
+      <type>link</type>
+      <element-name>presentation</element-name>
+      <name>Presentation</name>
+      <publish-label></publish-label>
+      <section>images</section>
+      <related-fields>
+        <item section="presentation" field="topic"/>
+      </related-fields>
+    </field>
+    <field guid="4c14da67be62a">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>caption</element-name>
+      <name>Caption</name>
+      <publish-label></publish-label>
+      <text-size>single</text-size>
+      <text-formatter></text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>images</section>
+    </field>
+    <field guid="4c14da67c0d2a">
+      <required>yes</required>
+      <show-column>yes</show-column>
+      <type>upload</type>
+      <element-name>file</element-name>
+      <name>File</name>
+      <publish-label></publish-label>
+      <destination>/workspace</destination>
+      <validator>/\.(?:bmp|gif|jpe?g|png)$/i</validator>
+      <section>images</section>
+    </field>
+    <field guid="4c14da67c3408">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <suggestion-source-threshold>2</suggestion-source-threshold>
+      <tag-delimiter>,</tag-delimiter>
+      <type>taglist</type>
+      <element-name>type</element-name>
+      <name>Type</name>
+      <publish-label></publish-label>
+      <delimiter>,</delimiter>
+      <validator></validator>
+      <section>images</section>
+      <suggestion-list-source include-existing="yes"/>
+    </field>
+  </fields>
+  <layout>
+    <column>
+      <size>large</size>
+      <fieldset>
+        <name></name>
+        <field>caption</field>
+        <field>file</field>
+      </fieldset>
+    </column>
+    <column>
+      <size>small</size>
+      <fieldset>
+        <name></name>
+        <field>presentation</field>
+        <field>type</field>
+      </fieldset>
+    </column>
+  </layout>
+</section>
