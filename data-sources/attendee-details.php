@@ -2,30 +2,36 @@
 	
 	require_once EXTENSIONS . '/ds_sections/lib/class.datasource.php';
 	
-	Final Class DataSourceAttendees_Index extends SectionsDataSource {
+	Final Class DataSourceAttendee_Details extends SectionsDataSource {
 
 		public function __construct(){
 			parent::__construct();
 
 			$this->_about = (object)array(
-				'name'			=> 'Attendees Index',
+				'name'			=> 'Attendee Details',
 				'author'		=> (object)array(
 					'name'			=> 'Nils Werner',
 					'website'		=> 'http://www.builderscollective.com',
 					'email'			=> 'nilwerner@gmail.com'
 				),
 				'version'		=> '1.0',
-				'release-date'	=> '2010-06-13T13:56:31+00:00'
+				'release-date'	=> '2010-06-13T13:52:16+00:00'
 			);
 			
 			$this->_parameters = (object)array(
-				'root-element' => 'attendees-index',
-				'limit' => '20',
+				'root-element' => 'attendee-details',
+				'limit' => '1',
 				'page' => '1',
 				'section' => 'attendees',
 				'conditions' => array (
 					),
 				'filters' => array (
+					  0 => 
+					  array (
+					    'type' => 'is',
+					    'value' => '{$name}',
+					    'element-name' => 'symphony-username',
+					  ),
 					),
 				'redirect-404-on-empty' => false,
 				'append-pagination' => false,
@@ -33,12 +39,9 @@
 				'sort-field' => 'system:id',
 				'sort-order' => 'desc',
 				'included-elements' => array (
-					  0 => 'symphony-username: unformatted',
-					  1 => 'location: unformatted',
-					  2 => 'location-name: unformatted',
-					  3 => 'name: unformatted',
 					),
 				'parameter-output' => array (
+					  0 => 'system:id',
 					),
 				'dependencies' => array (
 					),
@@ -50,4 +53,4 @@
 		}
 	}
 
-	return 'DataSourceAttendees_Index';
+	return 'DataSourceAttendee_Details';
