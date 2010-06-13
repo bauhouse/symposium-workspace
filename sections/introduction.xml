@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section guid="4c1509c6141a0">
+  <name handle="introduction">Introduction</name>
+  <hidden-from-publish-menu>no</hidden-from-publish-menu>
+  <navigation-group>Introduction</navigation-group>
+  <publish-order-handle></publish-order-handle>
+  <publish-order-direction></publish-order-direction>
+  <fields>
+    <field guid="4c1509c61685e">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>title</element-name>
+      <name>Title</name>
+      <publish-label>Title</publish-label>
+      <text-size>single</text-size>
+      <text-formatter></text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>introduction</section>
+    </field>
+    <field guid="4c1509c618f44">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>body</element-name>
+      <name>Body</name>
+      <publish-label>Body</publish-label>
+      <text-size>medium</text-size>
+      <text-formatter>markdown</text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>introduction</section>
+    </field>
+  </fields>
+  <layout>
+    <column>
+      <size>large</size>
+      <fieldset>
+        <name></name>
+        <field>title</field>
+        <field>body</field>
+      </fieldset>
+    </column>
+    <column>
+      <size>small</size>
+      <fieldset>
+        <name></name>
+      </fieldset>
+    </column>
+  </layout>
+</section>

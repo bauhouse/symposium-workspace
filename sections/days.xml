@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section guid="4c150a20ede2e">
+  <name handle="days">Days</name>
+  <hidden-from-publish-menu>no</hidden-from-publish-menu>
+  <navigation-group>Introduction</navigation-group>
+  <publish-order-handle></publish-order-handle>
+  <publish-order-direction></publish-order-direction>
+  <fields>
+    <field guid="4c150a20f05c7">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <size>medium</size>
+      <type>textbox</type>
+      <element-name>body</element-name>
+      <name>Body</name>
+      <publish-label>Body</publish-label>
+      <text-size>medium</text-size>
+      <text-formatter>markdown</text-formatter>
+      <text-validator></text-validator>
+      <text-length>none</text-length>
+      <column-length>75</column-length>
+      <text-handle>yes</text-handle>
+      <section>days</section>
+    </field>
+    <field guid="4c150a20f2cb1">
+      <required>no</required>
+      <show-column>yes</show-column>
+      <type>select</type>
+      <element-name>day</element-name>
+      <name>Day</name>
+      <publish-label>Day</publish-label>
+      <static-options>Saturday,Sunday</static-options>
+      <dynamic-options></dynamic-options>
+      <section>days</section>
+    </field>
+  </fields>
+  <layout>
+    <column>
+      <size>large</size>
+      <fieldset>
+        <name></name>
+        <field>body</field>
+        <field>day</field>
+      </fieldset>
+    </column>
+    <column>
+      <size>small</size>
+      <fieldset>
+        <name></name>
+      </fieldset>
+    </column>
+  </layout>
+</section>
