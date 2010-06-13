@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<view guid="4c14dae24c4d1">
-  <title>Attendees</title>
-  <content-type>text/html;charset=utf-8</content-type>
-  <url-parameters>
-    <item>name</item>
-  </url-parameters>
-</view>

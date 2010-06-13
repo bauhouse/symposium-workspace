@@ -2,6 +2,15 @@
 <view guid="4c14d9b32d46f">
   <title>Home</title>
   <content-type>text/html;charset=utf-8</content-type>
+  <data-sources>
+    <item>days</item>
+    <item>twitter-feed</item>
+    <item>presentations-index</item>
+    <item>introduction</item>
+    <item>flickr-group-index</item>
+    <item>attendees-index</item>
+    <item>comments</item>
+  </data-sources>
   <types>
     <item>index</item>
   </types>
