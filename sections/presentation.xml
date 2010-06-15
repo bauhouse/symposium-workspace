@@ -46,7 +46,7 @@
       <name>File</name>
       <publish-label></publish-label>
       <destination>/workspace</destination>
-      <validator>/\.(?:pdf)$/i</validator>
+      <validator></validator>
       <section>presentation</section>
     </field>
     <field guid="4c14d9e2a04b6">
@@ -59,7 +59,7 @@
       <publish-label></publish-label>
       <text-size>single</text-size>
       <text-formatter></text-formatter>
-      <text-validator>/^-?(?:\d+(?:\.\d+)?|\.\d+)$/i</text-validator>
+      <text-validator></text-validator>
       <text-length>none</text-length>
       <column-length>75</column-length>
       <text-handle>yes</text-handle>

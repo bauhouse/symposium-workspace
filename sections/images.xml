@@ -43,7 +43,7 @@
       <name>File</name>
       <publish-label></publish-label>
       <destination>/workspace</destination>
-      <validator>/\.(?:bmp|gif|jpe?g|png)$/i</validator>
+      <validator></validator>
       <section>images</section>
     </field>
     <field guid="4c14da67c3408">
