@@ -38,6 +38,19 @@
 		<script src="{$root}/workspace/assets/js/jquery.metadata.js" type="text/javascript"></script>
 		<script src="{$root}/workspace/assets/js/jquery.jmapping.min.js" type="text/javascript"></script>
 		<script src="{$root}/workspace/assets/js/map.js" type="text/javascript"></script>
+		<script src="workspace/assets/js/jquery.npFullBgImg.js"></script>
+		<script src="workspace/assets/js/functions.js"></script>
+		<script>
+		//simple static single image load demo
+
+		//background image loading functions, loads first image on page load
+		var backgroundPath = "workspace/assets/img/4693184605_8063a3486c_b.jpg";
+
+
+		//selectivly load images, based on some action
+		/**$('#testLink').click(function () {
+		$('#imgContainer').npFullBgImg("workspace/assets/img/home2.jpg", {fadeInSpeed: 2000});
+		});*/	</script>
 		<xsl:apply-templates select="data" mode="assets"/>
 	</head>
 	<body>

@@ -57,35 +57,15 @@
 					<a href="#">Download {handle}'s presentation</a>
 				</div>
 			</article>
-
-
-			<xsl:call-template name="map"/>
-			<xsl:call-template name="images"/>
-			<xsl:call-template name="attendees"/>
-
 		</section>
+		<xsl:call-template name="map"/>
+		<xsl:call-template name="images"/>
+		<xsl:call-template name="attendees"/>
+
 		<footer>
 
 		</footer>
 
-		<script src="http://www.google.com/jsapi?key=ABQIAAAAW6Apo4FW5VYfLZC0TOi4sRQmQlgb2dAVZwp9xqCwzdBoJivZ1BT-Tz9Ie6XQpaiQ4MYsyKvqCDi_XA"></script>
-		<script> 	
-		google.load("maps", "2");
-		google.load("jquery", "1.4.2");
-		</script>
-		<script src="workspace/assets/js/jquery.npFullBgImg.js"></script>
-		<script src="workspace/assets/js/functions.js"></script>
-		<script>
-		//simple static single image load demo
-
-		//background image loading functions, loads first image on page load
-		var backgroundPath = "workspace/assets/img/4693184605_8063a3486c_b.jpg";
-
-
-		//selectivly load images, based on some action
-		/**$('#testLink').click(function () {
-		$('#imgContainer').npFullBgImg("workspace/assets/img/home2.jpg", {fadeInSpeed: 2000});
-		});*/	</script>
 	</div>
 
 

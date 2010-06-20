@@ -2,19 +2,22 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="map">
-	<div id="map" style="width: 600px; height: 400px;"></div>
-	<div id="map-side-bar">
-		<div class="map-location">
-			<xsl:attribute name="data">
-				<xsl:text>{id: 1, point: {lat: 51.500152, lng: -0.126236}, category: 'venue'}</xsl:text>
-			</xsl:attribute>
-			<a href="#" class="map-link">London</a>
-			<div class="info-box">
-				<p>The venue.</p>
+	<section>
+		<header><h1>Map</h1></header>
+		<div id="map" style="width: 920px; height: 460px;"></div>
+		<div id="map-side-bar">
+			<div class="map-location">
+				<xsl:attribute name="data">
+					<xsl:text>{id: 'venue', point: {lat: 51.500152, lng: -0.126236}, category: 'venue'}</xsl:text>
+				</xsl:attribute>
+				<a href="#" class="map-link">London</a>
+				<div class="info-box">
+					<p>The venue.</p>
+				</div>
 			</div>
+			<xsl:apply-templates select="attendees-index/entry"/>
 		</div>
-		<xsl:apply-templates select="attendees-index/entry"/>
-	</div>
+	</section>
 </xsl:template>
 
 <xsl:template match="attendees-index/entry">
@@ -22,8 +25,8 @@
 		<xsl:attribute name="data">
 			<xsl:text>{</xsl:text>
 			<xsl:value-of select="concat('id: ', @id,', ')"/>
-			<xsl:value-of select="concat('point: {lat: ', substring-before(location/@handle,'-'), 'lng: ', substring-after(location/@handle,'-'),'}')"/>
-			<xsl:if test="(symphony-username/handle = 'czheng') or (symphony-username/handle = 'Allen')">
+			<xsl:value-of select="concat('point: {lat: ', substring-before(location,','), ', lng: ', substring-after(location,','),'}')"/>
+			<xsl:if test="(symphony-username = 'czheng') or (symphony-username = 'Allen')">
 				<xsl:text>, category: 'team'</xsl:text>
 			</xsl:if>
 			<xsl:text>}</xsl:text>
